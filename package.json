@@ -1,0 +1,40 @@
+{
+  "name": "npm-package-ts-template",
+  "version": "0.0.1",
+  "description": "Simple template for npm-packages in typescript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "./node_modules/.bin/tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepublish": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtoska/npm-package-ts-template.git"
+  },
+  "keywords": [
+    "typescript",
+    "npm"
+  ],
+  "author": "david toska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidtoska/npm-package-ts-template/issues"
+  },
+  "homepage": "https://github.com/davidtoska/npm-package-ts-template#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.5",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "ts-jest": "^23.10.4",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.2"
+  }
+}
