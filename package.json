@@ -1,7 +1,7 @@
 {
-  "name": "npm-package-ts-template",
+  "name": "throttle-promise-wrap",
   "version": "0.0.1",
-  "description": "Simple template for npm-packages in typescript",
+  "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -18,10 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/davidtoska/npm-package-ts-template.git"
   },
-  "keywords": [
-    "typescript",
-    "npm"
-  ],
+  "keywords": [],
   "author": "david toska",
   "license": "ISC",
   "bugs": {
